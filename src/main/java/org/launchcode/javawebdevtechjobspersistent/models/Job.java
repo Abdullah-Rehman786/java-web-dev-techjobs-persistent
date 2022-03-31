@@ -3,13 +3,7 @@ package org.launchcode.javawebdevtechjobspersistent.models;
 import javax.persistence.*;
 
 @Entity
-public class Job{
-
-    @Id
-    @GeneratedValue
-    private int id;
-
-    private String name;
+public class Job extends AbstractEntity{
 
     private String employer;
     private String skills;
@@ -25,13 +19,13 @@ public class Job{
 
     // Getters and setters.
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public String getEmployer() {
         return employer;
